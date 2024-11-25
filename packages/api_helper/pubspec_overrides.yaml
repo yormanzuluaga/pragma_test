@@ -1,0 +1,3 @@
+dependency_overrides:
+  pragma_ui:
+    path: ../pragma_ui

@@ -1,0 +1,14 @@
+ * This file provides instructions for updating icon assets in the Swiss UI package.
+ * 
+ * Steps to update icons:
+ * 1. Visit icomoon.io.
+ * 2. Upload the `selection.json` file.
+ * 3. Ensure the option to generate a Dart class is enabled.
+ * 4. Download the generated zip file.
+ * 5. Update the following files in the Swiss UI package:
+ *    - `assets/fonts/Swiss-Icon.ttf`
+ *    - `widget/icons/swiss_icons.dart` (see below)
+
+ For each iconData, update the following:
+ from:   static const IconData contrato = IconData(0xe904, fontFamily: _fontFamily);
+ to:     static const IconData contrato = IconData(0xe904, fontFamily: _fontFamily, fontPackage: 'pragma_ui');
